@@ -1,0 +1,29 @@
+.sparkle-background {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(255, 255, 255, 0.4));
+    animation: sparkle 3s infinite linear;
+    background-size: 200% 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;  /* Ensures the video remains interactive */
+  }
+  
+  @keyframes sparkle {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
