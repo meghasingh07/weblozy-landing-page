@@ -41,11 +41,14 @@ export default function LandingSection() {
       className="min-h-screen bg-cover bg-center text-white relative overflow-hidden"
       style={{ backgroundImage: "url('/bgcolor.png')" }}
     >
+      
       <div className="flex justify-between items-center p-4 sm:p-6 max-w-7xl mx-auto">
         <div className="flex items-center space-x-2">
           <img src="/logoo.png" alt="Shortcut Logo" className="h-10 w-auto" />
         </div>
-        <div className="flex items-center space-x-2 sm:space-x-4">
+
+      
+        <div className="hidden sm:flex items-center space-x-2 sm:space-x-4">
           {buttons.map((button, idx) => (
             <a
               key={idx}
@@ -58,6 +61,7 @@ export default function LandingSection() {
         </div>
       </div>
 
+      
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-10 sm:py-16 mt-10">
         <div className="max-w-xl text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
@@ -76,6 +80,7 @@ export default function LandingSection() {
             <span className="font-semibold text-white">Automatically.</span>
           </p>
 
+        
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
             {actions.map((action, idx) => (
               <button
