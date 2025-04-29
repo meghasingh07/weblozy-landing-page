@@ -4,21 +4,26 @@ import { motion } from "framer-motion";
 const shipFeatures = [
   {
     title: "Visualize Progress with Reporting",
-    description: "Get detailed views of progress and blockers so you can focus resources where they're most needed.",
-    image: "/ship1.webp", 
+    description:
+      "Get detailed views of progress and blockers so you can focus resources where they're most needed.",
+    image: "/ship1.webp",
     link: "#",
   },
   {
     title: "Monitor Post-Launch Issues",
-    description: "Get detailed views of progress and blockers so you can focus resources where they're most needed.",
-    image: "/ship2.webp", 
+    description:
+      "Get detailed views of progress and blockers so you can focus resources where they're most needed.",
+    image: "/ship2.webp",
     link: "#",
   },
 ];
 
 export default function ShipIt() {
   return (
-    <section id="ship" className="bg-[#0D172A] text-white py-24 px-6 md:px-16 -mt-90">
+    <section
+      id="ship"
+      className="bg-[#0D172A] text-white py-24 px-6 md:px-16 -mt-96 overflow-x-hidden"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +39,6 @@ export default function ShipIt() {
         </p>
       </motion.div>
 
-     
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -43,19 +47,17 @@ export default function ShipIt() {
         className="max-w-6xl mx-auto mb-20"
       >
         <div className="rounded-2xl overflow-hidden shadow-2xl">
-  <video
-    src="/ship.mp4"
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-full h-auto"
-  />
-</div>
-
+          <video
+            src="/ship.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-auto"
+          />
+        </div>
       </motion.div>
 
-     
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
         {shipFeatures.map((feature, idx) => (
           <motion.a

@@ -80,7 +80,6 @@ export default function TestimonialSlider() {
             transition={{ duration: 0.6 }}
             className="bg-[#161F33] rounded-3xl p-10 w-full flex flex-col md:flex-row items-center shadow-xl shadow-blue-900/30 relative"
           >
-           
             <div className="flex-1">
               <div className="flex items-center space-x-4 mb-6">
                 <img
@@ -106,8 +105,7 @@ export default function TestimonialSlider() {
               </a>
             </div>
 
-          
-            <div className="flex-1 flex justify-center mt-8 md:mt-0">
+            <div className="hidden md:flex flex-1 justify-center mt-8 md:mt-0">
               <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-blue-400 shadow-md">
                 <img
                   src={testimonial.photo}
@@ -117,7 +115,6 @@ export default function TestimonialSlider() {
               </div>
             </div>
 
-           
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
               <button
                 onClick={handlePrev}

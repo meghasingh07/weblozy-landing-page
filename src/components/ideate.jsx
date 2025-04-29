@@ -3,7 +3,7 @@ import React from "react";
 const DevelopIdeas = () => {
   return (
     <section id="ideate" className="bg-[#0D172A] py-16 px-4 md:px-12">
-   <div className="relative z-10 text-center max-w-4xl mx-auto">
+   <div className="relative z-10 text-center max-w-4xl mx-auto -mb-20">
         <h2 className="text-4xl md:text-5xl font-bold text-gradient bg-gradient-to-r from-blue-400 to-white inline-block bg-clip-text text-transparent">
           Develop Your Ideas
         </h2>
@@ -84,7 +84,7 @@ const DevelopIdeas = () => {
 
 
     </section>
-  );
+  )
 };
 
 export default DevelopIdeas;
