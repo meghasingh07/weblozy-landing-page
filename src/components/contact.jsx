@@ -25,7 +25,7 @@ export default function Contact() {
     onSubmit: (values, { resetForm }) => {
       console.log("Form Submitted:", values);
       resetForm();
-    }, git commit -m "initial commit" git push -u origin main
+    },  
   });
 
   return (
