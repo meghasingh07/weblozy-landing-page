@@ -10,6 +10,8 @@ import TestimonialSlider from "./components/Testimonials";
 import StatsSection from "./components/Stats";
 import IntegrationsHub from "./components/IntegrationsHub";
 import BlogSection from "./components/Blog";
+import Contact from "./components/contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
                 <StatsSection/>
                 <IntegrationsHub/>
                 <BlogSection/>
+                <Contact/>
+                <Footer/>
               </>
             }
           />
