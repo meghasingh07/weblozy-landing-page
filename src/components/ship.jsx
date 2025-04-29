@@ -21,9 +21,10 @@ const shipFeatures = [
 export default function ShipIt() {
   return (
     <section
-      id="ship"
-      className="bg-[#0D172A] text-white py-24 px-6 md:px-16 -mt-96 overflow-x-hidden"
-    >
+  id="ship"
+  className="bg-[#0D172A] text-white py-8 px-4 md:px-10 -mt-50 md:-mt-48 relative z-10 overflow-x-hidden"
+>
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

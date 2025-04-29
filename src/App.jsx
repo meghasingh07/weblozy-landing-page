@@ -9,6 +9,7 @@ import LandingPage from "./components/content";
 import TestimonialSlider from "./components/Testimonials";
 import StatsSection from "./components/Stats";
 import IntegrationsHub from "./components/IntegrationsHub";
+import BlogSection from "./components/Blog";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <TestimonialSlider/>
                 <StatsSection/>
                 <IntegrationsHub/>
+                <BlogSection/>
               </>
             }
           />

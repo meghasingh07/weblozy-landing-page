@@ -62,7 +62,7 @@ export default function TestimonialSlider() {
   const testimonial = testimonials[index];
 
   return (
-    <div className="bg-[#0D172A] text-white py-20 px-6 flex flex-col items-center -mt-10">
+    <div className="bg-[#0D172A] text-white py-20 px-6 flex flex-col items-center -mt-7">
       <h2 className="text-4xl font-bold mb-4 text-center">
         Our users love Weblozy
       </h2>

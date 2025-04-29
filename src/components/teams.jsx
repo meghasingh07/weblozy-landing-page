@@ -21,7 +21,8 @@ const images = [
 
 function TrustedBy() {
   return (
-    <div className="w-full bg-[#0D172A] py-12">
+   <div className="w-full bg-[#0D172A] pt-6 md:pt-12 pb-12">
+
       <div className="text-center text-3xl text-[#A3D7FF] mb-8">
         Trusted by thousands of teams
       </div>
