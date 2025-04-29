@@ -35,13 +35,10 @@ function VideoSlider() {
         {videos.map((videoUrl, index) => (
           <SwiperSlide key={index} className="h-full">
             <div className="relative flex flex-col justify-between items-center h-full w-full px-4 py-4">
-
-              {/* Heading */}
               <h2 className="text-xl md:text-3xl font-semibold text-[#A3D7FF] text-center leading-snug">
                 Visualize, plan, and make progress
               </h2>
 
-              {/* Video */}
               <video
                 src={videoUrl}
                 className="w-full max-w-[1200px] flex-1 object-cover rounded-lg shadow-lg my-2"
@@ -51,19 +48,16 @@ function VideoSlider() {
                 playsInline
               />
 
-              {/* Divider Line (Sparkle) */}
               <div className="w-full">
                 <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
               </div>
 
-              {/* Pagination (Desktop Only) */}
               {!isMobile && (
                 <div className="absolute bottom-4 left-0 w-full flex justify-center">
                   <div className="swiper-pagination"></div>
                 </div>
               )}
 
-              {/* Sparkle Background */}
               <div className="absolute top-0 left-0 w-full h-full sparkle-background pointer-events-none"></div>
             </div>
           </SwiperSlide>
